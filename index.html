@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>The Quiz for true Digital Media Majors</title>
+<link href ="style.css" rel ="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script src = "checker.js"></script>
+
+<style>
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+
+
+#quiz {
+	margin-left: 10px;
+	background: #d2def2;
+	padding: 10px 20px 10px 20px;
+	width: 400px;
+	border-radius: 0px;
+	float: left;
+
+}
+
+input {
+	margin-bottom: 20px;
+	display: block;
+}
+
+#textbox {
+	height: 25px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+	padding-left: 5px;
+}
+
+
+#button {
+	background: green;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	font-size: 16px;
+	transition-duration: .5s;
+	margin-top: 15px;
+}
+
+
+
+#button:hover {
+	background: white;
+	border: 1px solid green;
+	color: black;
+	cursor: pointer;
+
+}
+
+#after_submit {
+	visibility: hidden;
+	background: #ff5459;
+	padding: 20px;
+	width: 400px;
+	border-radius: 20px;
+	font-size: 30px;
+	margin-left: 20px;
+
+}
+
+#picture {
+	width: 375px;
+	height: 245px;
+}
+
+
+
+#mc {
+	display: inline;
+}
+</style>
+</head>
+
+
+<body>
+<h1>The Quiz for true Digital Media Majors</h1>
+
+
+<form id = "quiz" name = "quiz">
+
+<p class = "questions">Which of the following will redeem your Javascript?</p>
+<input type = "radio" id = "mc" name = "question1" value = "Answer 1"> A missing Curly-Boy {} <br>
+<input type = "radio" id = "mc" name = "question1" value = "Answer 2"> A kidnapped Semicolon ;<br>
+<input type = "radio" id = "mc" name = "question1" value = "Answer 3"> Set the word "<strong>undefined</strong>" as a variable<br>
+<input type = "radio" id = "mc" name = "question1" value = "Answer 4"> Using the Atom IDE w/ syntax highlighting<br>
+
+<p class = "questions">What do you consider a programming language?</p>
+<input type = "radio" id = "mc" name = "question2" value = "Answer 1"> Javascript can be...<br>
+<input type = "radio" id = "mc" name = "question2" value = "Answer 2"> HTML or bust my boy<br>
+<input type = "radio" id = "mc" name = "question2" value = "Answer 3"> C is the way to go<br>
+<input type = "radio" id = "mc" name = "question2" value = "Answer 4"> PHP Master Race<br>
+
+<p class = "questions">You are making a 2D Side Scrolling Shooter. Choose your engine?</p>
+<input type = "radio" id = "mc" name = "question3" value = "Answer 1"> Game Maker Studio 2<br>
+<input type = "radio" id = "mc" name = "question3" value = "Answer 2"> Cry-Engine<br>
+<input type = "radio" id = "mc" name = "question3" value = "Answer 3"> Unreal Engine<br>
+<input type = "radio" id = "mc" name = "question3" value = "Answer 4"> Unity<br>
+
+<p class = "questions">Your making a website. What's the worst option for building it?</p>
+<input type = "radio" id = "mc" name = "question4" value = "Answer 1"> Wix<br>
+<input type = "radio" id = "mc" name = "question4" value = "Answer 2"> Wordpress + Elementor<br>
+<input type = "radio" id = "mc" name = "question4" value = "Answer 3"> Dreamweaver<br>
+<input type = "radio" id = "mc" name = "question4" value = "Answer 4"> Real Web Developers use Notepad<br>
+
+<p class = "questions">When are you graduating?</p>
+<input type = "radio" id = "mc" name = "question5" value = "Answer 1"> On Time<br>
+<input type = "radio" id = "mc" name = "question5" value = "Answer 2"> God knows it's not in 4 years with these workshops<br>
+
+<p class = "questions">Who takes your degree seriously?</p>
+<input type = "radio" id = "mc" name = "question6" value = "Answer 1"> Are you kidding, UCF by far. Look how well the tracks are crafted<br>
+<input type = "radio" id = "mc" name = "question6" value = "Answer 2"> I have prospective employers lining up<br>
+<input type = "radio" id = "mc" name = "question6" value = "Answer 3"> My Job Does<br>
+<input type = "radio" id = "mc" name = "question6" value = "Answer 4"> No One<br>
+
+<p class = "questions">Do you feel you that you are gonna be successful after graduation?</p>
+<input type = "radio" id = "mc" name = "question7" value = "Answer 1"> For sure, I'm basically a Graphic Design and Computer Science Major<br>
+<input type = "radio" id = "mc" name = "question7" value = "Answer 2"> Nah bruh, I'm homeless<br>
+
+<p class = "questions">Which Software induces poverty harder</p>
+<input type = "radio" id = "mc" name = "question8" value = "Answer 1"> Unreal<br>
+<input type = "radio" id = "mc" name = "question8" value = "Answer 2"> Unity<br>
+<input type = "radio" id = "mc" name = "question8" value = "Answer 3"> Maya<br>
+<input type = "radio" id = "mc" name = "question8" value = "Answer 4"> Adobe Suite<br>
+
+<p class = "questions">What site is first in your bookmarks</p>
+<input type = "radio" id = "mc" name = "question9" value = "Answer 1"> Behance<br>
+<input type = "radio" id = "mc" name = "question9" value = "Answer 2"> Quizlet<br>
+<input type = "radio" id = "mc" name = "question9" value = "Answer 3"> Stack Exchange<br>
+<input type = "radio" id = "mc" name = "question9" value = "Answer 4"> Reddit<br>
+
+<p class = "questions">Do you feel that you could write the code for this quiz without a reference</p>
+<input type = "radio" id = "mc" name = "question10" value = "Answer 1"> Yee<br>
+<input type = "radio" id = "mc" name = "question10" value = "Answer 2"> Nah<br>
+
+
+
+<input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+
+
+</form>
+
+<div id = "after_submit">
+<p id = "number_correct"></p>
+<p id = "message"></p>
+<img id = "picture">
+</div>
+</html>
+
+</body>
